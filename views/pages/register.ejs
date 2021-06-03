@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Welcome Photographer!</h2>
+    <form action="/register" method="POST">
+        <div class="form-group">
+          <label for="userName">Name</label>
+          <input type="name" id="userName" name="userName" 
+            placeholder="Enter Name" value="<%= typeof name != 'undefined' ? name : '' %>" />
+        </div>
+        <div class="form-group">
+            <label for="cities">Choose A City</label>
+            <select name="cities" id="cities">
+                <option value="NYC">New York City</option>
+                <option value="LA">Los Angeles</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="camera">Choose Your Camera Manufacturer of Choice</label>
+            <select name="camera" id="cities">
+                <option value="sony">Sony</option>
+                <option value="canon">Canon</option>
+                <option value="nikon">Nikon</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="form-control"
+            placeholder="Create Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" class="form-control"
+            placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? confirmPassword : '' %>" />
+        </div>
+        <input type="submit">
+        <p class="lead mt-4">Have An Account? <a href="/login" class="referal">Login</a></p>
+    </form>
+</body>
+</html>
