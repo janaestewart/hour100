@@ -32,12 +32,14 @@ app.use(
         secret: 'keyboard cat',
         resave: false,
         saveUninitialized: false,
-        store: MongoStore.create({ mongoUrl: `${process.env.DB_STRING}` })  //new MongoStore({ mongooseConnection: mongoose.connection})
+        store: MongoStore.create({ mongoUrl: `${process.env.DB_STRING}` })  //new MongoStore({ mongooseConnection: mongoose.connection}) wasn't working 
     })
 )
 
 app.use(passport.initialize())
 app.use(passport.session())
+
+app.use(flash())
 
 //set controllers 
 const indexRoute = require('./routes/index')

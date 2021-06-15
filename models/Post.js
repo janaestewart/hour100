@@ -1,25 +1,70 @@
 const mongoose = require('mongoose')
 
 const PostSchema = new mongoose.Schema({
-  postMessage: {
+  user:{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+  },
+  image:{
     type: String,
     required: true,
   },
-  userId: {
+  cloudinaryId:{
     type: String,
     required: true,
   },
-  userName: {
+  camera:{
+    type: String,
+    required: true,
+  },
+  lens:{
     type: String,
     required: true
   },
-  likes: {
+  venue:{
+    type: String,
+    required: true
+  },
+  aperture:{
+    type: String,
+    required: true
+  },
+  iso:{
+    type: String,
+    required: true
+  },
+  artist:{
+    type: String,
+    required: true
+  },
+  comment:{
+    type: String,
+    required: true
+  },
+  rating:{
     type: Number,
     required: true
-  },
-  image: {
-    type: String,
   }
 })
-
 module.exports = mongoose.model('Post', PostSchema)
+
+//   postMessage: {
+//     type: String,
+//     required: true,
+//   },
+//   userId: {
+//     type: String,
+//     required: true,
+//   },
+//   userName: {
+//     type: String,
+//     required: true
+//   },
+//   likes: {
+//     type: Number,
+//     required: true
+//   },
+//   image: {
+//     type: String,
+//   }
+// })

@@ -9,14 +9,14 @@ const UserSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  city: {
-    type: String,
-    required: true,
-  },
-  camera: {
-    type: String,
-    required: true,
-  },
+  // city: {
+  //   type: String,
+  //   required: true,
+  // },
+  // camera: {
+  //   type: String,
+  //   required: true,
+  // },
   email: {
     type: String,
     required: true,

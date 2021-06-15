@@ -19,7 +19,9 @@ module.exports = {
     const user = new User({
       userName: req.body.userName,
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+      // camera: req.body.camera,
+      // city: req.body.city
     })
 
     User.findOne({

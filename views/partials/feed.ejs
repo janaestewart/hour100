@@ -1,0 +1,22 @@
+<div>
+    <div>
+        <% posts.forEach(post=> { %>
+
+            <div class="postCard">
+                <div class="postHead">
+                    <h2>@ <%=post.user%></h2>
+                    <span class="<%=post.userName === user.userName ? 'del': 'none' %>">x</span>
+                </div>
+                <div class="postBody">
+                    <img src="<%=post.image %>" alt="">
+                    <span>Read More</span>
+                </div>
+                <div class="postFooter">
+                    <span class="camera"><%=post.camera %></span>
+                    <span class="venue"><%=post.venue %></span>
+                    <span class="camera"><%=post.artist %></span>
+                </div>
+            </div>
+        <%}) %>
+    </div>
+</div>

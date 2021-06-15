@@ -13,10 +13,14 @@ router.get('/profile', dashboardController.getProfile)
 //New Post
 router.post('/createPost', upload.single('file'), dashboardController.createPost)
 
-//Like Post
-router.put('/likePost/:id', dashboardController.likePost)
+//Venue Page
+// router.get('/venues', dashboardController.getVenues)
+
+// Individual Post Page?
+// router.get('/postId', dashboardController.getPostId)
+
 
 //Delete Post
-router.delete('/deletePost', dashboardController.deletePost)
+// router.delete('/deletePost', dashboardController.deletePost)
 
 module.exports = router

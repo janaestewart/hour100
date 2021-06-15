@@ -1,0 +1,90 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+  html{
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  
+  /******************************************
+  /* Navbar Styling
+  /*******************************************/
+  nav{
+    border-bottom: solid black .5px;   
+    width: 100%;
+  }
+
+  .naving {
+    display: flex;
+    flex-direction: row;
+    color: rgb(0, 0, 0);
+  }
+  
+  .logo h1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-left: 5%;
+
+  }
+
+  .naving ul{
+    list-style-type: none;
+    display: flex;
+    padding-left: 50%;
+    padding-top: 1%;
+  }
+
+  .naving li {
+    padding: 0 10px;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+ 
+  /******************************************
+  /* Create Post
+  /*******************************************/
+  .createPosts{
+      border: 1px black solid;
+      border-radius: 7px;
+      /* height: 260px; */
+      width: 70%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  form {
+      padding-top: 5px;
+  }
+  .forms{
+      padding-top: 5px;
+      margin: auto 0;
+  }
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
