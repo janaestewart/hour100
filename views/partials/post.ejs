@@ -3,38 +3,38 @@
         <form action="/dashboard/createPost"  enctype="multipart/form-data" method='POST'>
             <div class="formGroup">
                 <div class="forms">
-                    <input type="text">
-                    <label for="cameraUsed">Camera Used</label>
+                    <input type="text" id="camera" name="camera">
+                    <label for="camera">Camera Used</label>
                 </div>
                 <div class="forms">
-                    <input type="text">
-                    <label for="lensUsed">Lens Used</label>
+                    <input type="text"  id="lens" name="lens">
+                    <label for="lens">Lens Used</label>
                 </div>
                 <div class="forms">
-                    <input type="text">
-                    <label for="Venue">Venue</label>
+                    <input type="text"  id="venue" name="venue">
+                    <label for="venue">Venue</label>
                 </div>
                 <div class="forms">
-                    <input type="text">
-                    <label for="apertureUsed">Aperture Used</label>
+                    <input type="text" id="aperture" name="aperture">
+                    <label for="aperture">Aperture Used</label>
                 </div>
                 <div class="forms">
-                    <input type="text">
-                    <label for="isoUsed">ISO Used</label>
+                    <input type="text" id="iso" name="iso">
+                    <label for="iso">ISO Used</label>
                 </div>
                 <div class="forms">
-                    <input type="text">
+                    <input type="text" id="artist" name="artist">
                     <label for="artist">Artist Name</label>
                 </div>
                 <div class="forms">
-                    <input type="text">
-                    <label for="Comments">Comments</label>
+                    <input type="text" id="comments" name="comment">
+                    <label for="comments">Comments</label>
                 </div>
                 <div class="forms">
-                    <input type="number" min="0" max="10">
+                    <input type="number" min="0" max="10" id="rating" name="rating">
                     <label for="rating">Venue Rating</label>
                 </div>
-                <input type="file" class="form-control" name="file" id="imageUpload">
+                <input type="file" class="form-control" name="file" id="file" name='file'>
                 <input type="submit">
             </div>
         

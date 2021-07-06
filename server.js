@@ -20,6 +20,10 @@ require('dotenv').config({ path: './config/.env' })
 require('./config/passport')(passport)
 connectDB()
 
+// const bodyParser = require("body-parser")
+
+// app.use(bodyParser.urlencoded({ extended: true }));
+
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
@@ -41,15 +45,18 @@ app.use(passport.session())
 
 app.use(flash())
 
-//set controllers 
+//set routes
 const indexRoute = require('./routes/index')
 const dashboardRoute = require('./routes/dashboard')
+// const venuesRoute = require('.routes/venues')
+// const postRoute = require('./routes/post')
 
+//set controllers
 app.use('/', indexRoute)
 app.use('/dashboard', dashboardRoute)
+// app.use('/venues', venuesRoute)
+// app.use('/post', postRoute)
 
-
-//set routes
 
 app.listen(process.env.PORT, ()=>{
     console.log(`Sentient being named: Robot ${process.env.PORT}!`)

@@ -12,6 +12,7 @@ router.get('/profile', dashboardController.getProfile)
 
 //New Post
 router.post('/createPost', upload.single('file'), dashboardController.createPost)
+// router.post('/createPost', dashboardController.createPost)
 
 //Venue Page
 // router.get('/venues', dashboardController.getVenues)

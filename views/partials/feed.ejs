@@ -5,7 +5,7 @@
             <div class="postCard">
                 <div class="postHead">
                     <h2>@ <%=post.user%></h2>
-                    <span class="<%=post.userName === user.userName ? 'del': 'none' %>">x</span>
+                    <span class="<%=post.user === user.user ? 'del': 'none' %>">x</span>
                 </div>
                 <div class="postBody">
                     <img src="<%=post.image %>" alt="">
